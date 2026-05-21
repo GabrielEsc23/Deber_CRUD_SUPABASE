@@ -1,10 +1,10 @@
 <ion-header>
 
-  <ion-toolbar>
+  <ion-toolbar class="toolbar-poema">
 
     <ion-title>
 
-      Detalle del poema
+      📖 Detalle del poema
 
     </ion-title>
 
@@ -13,68 +13,86 @@
 </ion-header>
 
 
-<ion-content class="ion-padding">
+<ion-content class="ion-padding fondo-poema">
 
-  <ion-card *ngIf="poema">
+  <ion-card
+  class="detalle-card"
+  *ngIf="poema">
 
     <ion-card-header>
 
-      <ion-card-title>
+      <ion-card-title class="titulo">
 
         {{poema.titulo}}
 
       </ion-card-title>
 
+      <div class="autor">
+
+        ✍ {{poema.autor}}
+
+      </div>
+
     </ion-card-header>
+
 
 
     <ion-card-content>
 
-      <h3>
-
-        {{poema.autor}}
-
-      </h3>
-
-      <p>
+      <p class="contenido">
 
         {{poema.contenido}}
 
       </p>
 
 
-      <br>
+      <div class="seccion">
 
-      <img
-      [src]="poema.imagen_url"
-      width="100%">
+        <img
+        class="imagen-poema"
+        [src]="poema.imagen_url">
 
-
-      <br><br>
-
-
-      <iframe
-      width="100%"
-      height="250"
-      [src]="videoSeguro"
-      frameborder="0"
-      allowfullscreen>
-
-      </iframe>
+      </div>
 
 
-      <br><br>
+      <div class="seccion">
+
+        <h2>
+
+          🎬 Video relacionado
+
+        </h2>
+
+        <iframe
+        width="100%"
+        height="250"
+        [src]="videoSeguro"
+        frameborder="0"
+        allowfullscreen>
+
+        </iframe>
+
+      </div>
 
 
-      <audio
-      controls
-      width="100%">
+      <div class="seccion">
 
-      <source
-      [src]="poema.audio_url"
-      type="audio/mpeg">
+        <h2>
 
-      </audio>
+          🎵 Audio del poema
+
+        </h2>
+
+        <audio controls>
+
+          <source
+          [src]="poema.audio_url"
+          type="audio/mpeg">
+
+        </audio>
+
+      </div>
+
 
     </ion-card-content>
 

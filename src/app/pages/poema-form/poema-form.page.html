@@ -1,10 +1,10 @@
 <ion-header>
 
-  <ion-toolbar>
+  <ion-toolbar class="toolbar-poema">
 
     <ion-title>
 
-      {{ id ? 'Editar poema' : 'Nuevo poema' }}
+      {{ id ? '✏ Editar poema' : '📖 Nuevo poema' }}
 
     </ion-title>
 
@@ -14,9 +14,15 @@
 
 
 
-<ion-content class="ion-padding">
+<ion-content class="ion-padding fondo-poema">
 
-  <ion-item>
+
+
+<div class="formulario">
+
+
+
+  <ion-item class="campo">
 
     <ion-label position="stacked">
 
@@ -33,7 +39,8 @@
 
 
 
-  <ion-item>
+
+  <ion-item class="campo">
 
     <ion-label position="stacked">
 
@@ -50,7 +57,8 @@
 
 
 
-  <ion-item>
+
+  <ion-item class="campo">
 
     <ion-label position="stacked">
 
@@ -68,11 +76,12 @@
 
 
 
-  <ion-item>
+
+  <ion-item class="campo">
 
     <ion-label>
 
-      Imagen
+      🖼 Imagen
 
     </ion-label>
 
@@ -86,11 +95,12 @@
 
 
 
-  <ion-item>
+
+  <ion-item class="campo">
 
     <ion-label>
 
-      Audio
+      🎵 Audio
 
     </ion-label>
 
@@ -104,11 +114,12 @@
 
 
 
-  <ion-item>
+
+  <ion-item class="campo">
 
     <ion-label position="stacked">
 
-      Video YouTube
+      🎬 Video YouTube
 
     </ion-label>
 
@@ -125,11 +136,15 @@
 
 
   <ion-button
+  class="guardar-btn"
   expand="block"
   (click)="guardar()">
 
-  Guardar
+  Guardar poema
 
   </ion-button>
+
+
+</div>
 
 </ion-content>
