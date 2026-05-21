@@ -58,7 +58,7 @@ export class PoemasService {
     return data;
   }
 
-  async actulizar(id: number, poema:Poema){
+  async actualizar(id: number, poema:Poema){
     const {data,error}= await this.supabase
     .from('poemas')
     .update(poema)
@@ -78,6 +78,96 @@ export class PoemasService {
   }
 
   
-  
+  async subirImagen(
+file: File
+){
+
+const nombre=
+
+Date.now()+
+"-"+
+file.name;
+
+
+const {error}=
+
+await this.supabase
+.storage
+.from(
+'poemas-imagenes'
+)
+.upload(
+nombre,
+file
+);
+
+
+if(error)
+throw error;
+
+
+
+const {data}=
+
+this.supabase
+.storage
+.from(
+'poemas-imagenes'
+)
+.getPublicUrl(
+nombre
+);
+
+
+return data.publicUrl;
+
+}
+
+
+
+async subirAudio(
+file:File
+){
+
+const nombre=
+
+Date.now()+
+"-"+
+file.name;
+
+
+const {error}=
+
+await this.supabase
+.storage
+.from(
+'poemas-audios'
+)
+.upload(
+nombre,
+file
+);
+
+
+if(error)
+throw error;
+
+
+
+const {data}=
+
+this.supabase
+.storage
+.from(
+'poemas-audios'
+)
+.getPublicUrl(
+nombre
+);
+
+
+return data.publicUrl;
+
+} 
 
 }

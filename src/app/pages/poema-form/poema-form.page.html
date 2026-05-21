@@ -1,13 +1,135 @@
-<ion-header [translucent]="true">
+<ion-header>
+
   <ion-toolbar>
-    <ion-title>poema-form</ion-title>
+
+    <ion-title>
+
+      {{ id ? 'Editar poema' : 'Nuevo poema' }}
+
+    </ion-title>
+
   </ion-toolbar>
+
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">poema-form</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+
+<ion-content class="ion-padding">
+
+  <ion-item>
+
+    <ion-label position="stacked">
+
+      Título
+
+    </ion-label>
+
+    <ion-input
+    [(ngModel)]="poema.titulo">
+
+    </ion-input>
+
+  </ion-item>
+
+
+
+  <ion-item>
+
+    <ion-label position="stacked">
+
+      Autor
+
+    </ion-label>
+
+    <ion-input
+    [(ngModel)]="poema.autor">
+
+    </ion-input>
+
+  </ion-item>
+
+
+
+  <ion-item>
+
+    <ion-label position="stacked">
+
+      Contenido
+
+    </ion-label>
+
+    <ion-textarea
+    rows="6"
+    [(ngModel)]="poema.contenido">
+
+    </ion-textarea>
+
+  </ion-item>
+
+
+
+  <ion-item>
+
+    <ion-label>
+
+      Imagen
+
+    </ion-label>
+
+    <input
+    type="file"
+    accept="image/*"
+    (change)="seleccionarImagen($event)">
+
+  </ion-item>
+
+
+
+
+  <ion-item>
+
+    <ion-label>
+
+      Audio
+
+    </ion-label>
+
+    <input
+    type="file"
+    accept="audio/*"
+    (change)="seleccionarAudio($event)">
+
+  </ion-item>
+
+
+
+
+  <ion-item>
+
+    <ion-label position="stacked">
+
+      Video YouTube
+
+    </ion-label>
+
+    <ion-input
+    [(ngModel)]="poema.video_url">
+
+    </ion-input>
+
+  </ion-item>
+
+
+
+  <br>
+
+
+  <ion-button
+  expand="block"
+  (click)="guardar()">
+
+  Guardar
+
+  </ion-button>
+
 </ion-content>
