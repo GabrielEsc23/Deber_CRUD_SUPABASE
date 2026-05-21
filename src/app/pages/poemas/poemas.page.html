@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+
+    <ion-title>
+      Lista de poemas
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-button
+    expand="block"
+    routerLink="/poemas-form">
+
+    Crear poema
+
+  </ion-button>
+
+
+  <ion-card *ngFor="let poema of poemas">
+
+    <ion-card-header>
+
+      <ion-card-title>
+        {{poema.titulo}}
+      </ion-card-title>
+
+      <ion-card-subtitle>
+        {{poema.autor}}
+      </ion-card-subtitle>
+
+    </ion-card-header>
+
+
+    <ion-card-content>
+
+      <p>
+
+        {{poema.contenido}}
+
+      </p>
+
+      <br>
+
+      <ion-button
+      [routerLink]="['/poema-detalle', poema.id]">
+
+      Ver
+
+      </ion-button>
+
+
+      <ion-button
+      [routerLink]="['/poemas-form', poema.id]">
+
+      Editar
+
+      </ion-button>
+
+
+      <ion-button
+      color="danger"
+      (click)="eliminar(poema.id!)">
+
+      Eliminar
+
+      </ion-button>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>
