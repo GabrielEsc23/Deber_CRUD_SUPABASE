@@ -11,10 +11,11 @@ import {
   IonLabel,
   IonInput,
   IonTextarea,
-  IonButton
+  IonButton,
+  IonButtons
 } from '@ionic/angular/standalone';
 
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router,RouterLink } from '@angular/router';
 
 import {
   PoemasService,
@@ -29,7 +30,7 @@ import {
   imports: [
     CommonModule,
     FormsModule,
-
+    IonButtons,
     IonContent,
     IonHeader,
     IonToolbar,
@@ -39,7 +40,8 @@ import {
     IonLabel,
     IonInput,
     IonTextarea,
-    IonButton
+    IonButton,
+    RouterLink
   ]
 })
 export class PoemaFormPage implements OnInit {

@@ -10,10 +10,11 @@ import {
   IonCardHeader,
   IonCardTitle,
   IonCardContent,
-  IonButton
+  IonButton,
+  IonButtons
 } from '@ionic/angular/standalone';
 
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute,RouterLink } from '@angular/router';
 
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
@@ -31,13 +32,14 @@ import { PoemasService, Poema } from 'src/app/services/poemas';
     IonHeader,
     IonToolbar,
     IonTitle,
-
+    IonButtons,
     IonCard,
     IonCardHeader,
     IonCardTitle,
     IonCardContent,
 
-    IonButton
+    IonButton,
+    RouterLink
   ]
 })
 export class PoemaDetallePage implements OnInit {

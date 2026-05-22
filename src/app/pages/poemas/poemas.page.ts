@@ -12,7 +12,9 @@ import {
   IonCardHeader,
   IonCardTitle,
   IonCardSubtitle,
-  IonCardContent
+  IonCardContent,
+  IonButtons,
+
 } from '@ionic/angular/standalone';
 
 import { RouterLink } from '@angular/router';
@@ -27,7 +29,7 @@ import { PoemasService, Poema } from 'src/app/services/poemas';
   imports: [
     CommonModule,
     FormsModule,
-
+    IonButtons,
     IonContent,
     IonHeader,
     IonTitle,

@@ -1,16 +1,22 @@
-<ion-header>
+<ion-toolbar class="toolbar-poema">
 
-  <ion-toolbar class="toolbar-poema">
+  <ion-buttons slot="start">
 
-    <ion-title>
+    <ion-button routerLink="/poemas">
 
-      {{ id ? '✏ Editar poema' : '📖 Nuevo poema' }}
+      ⬅ Volver
 
-    </ion-title>
+    </ion-button>
 
-  </ion-toolbar>
+  </ion-buttons>
 
-</ion-header>
+  <ion-title>
+
+    {{ id ? '✏ Editar poema' : '📖 Nuevo poema' }}
+
+  </ion-title>
+
+</ion-toolbar>
 
 
 
@@ -81,7 +87,7 @@
 
     <ion-label>
 
-      🖼 Imagen
+      🏞️ Imagen
 
     </ion-label>
 
