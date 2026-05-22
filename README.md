@@ -149,7 +149,7 @@ Build Bundle(s) / APK(s)
 Build APK(s)
 ```
 
-APK generada:
+Link de APK y ABB firmada y no firmada:
 
 ```
 https://epnecuador-my.sharepoint.com/:f:/g/personal/edison_escobar01_epn_edu_ec/IgCnpVHRclCGSJEXKR5Av8zmAWtmSwqrW9foyIDsMyDSnAY?e=Qrhxti
