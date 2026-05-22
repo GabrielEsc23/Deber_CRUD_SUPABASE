@@ -76,32 +76,31 @@ Buckets utilizados en Supabase Storage:
 
 ### Icono de la aplicación
 
-[Insertar captura aquí]
+[https://github.com/GabrielEsc23/Deber_CRUD_SUPABASE/blob/main/Capturas_app_poemas/icono.png]]
 
 ---
 
 ### Splash Screen
 
-[Insertar captura aquí]
+![Splash Screen](https://raw.githubusercontent.com/GabrielEsc23/Deber_CRUD_SUPABASE/main/Capturas_app_poemas/splash.png)
 
 ---
 
 ### Página principal — Lista de poemas
 
-[Insertar captura aquí]
+![Página principal](https://raw.githubusercontent.com/GabrielEsc23/Deber_CRUD_SUPABASE/main/Capturas_app_poemas/pagina-pricipal.png)
 
 ---
 
 ### Página detalle del poema
 
-[Insertar captura aquí]
+![Detalle del poema](https://raw.githubusercontent.com/GabrielEsc23/Deber_CRUD_SUPABASE/main/Capturas_app_poemas/poema-detalle.png)
 
 ---
 
 ### Página formulario de poemas
 
-[Insertar captura aquí]
-
+![Formulario poema](https://raw.githubusercontent.com/GabrielEsc23/Deber_CRUD_SUPABASE/main/Capturas_app_poemas/editar.png)
 ---
 
 ## 🚀 Instalación
