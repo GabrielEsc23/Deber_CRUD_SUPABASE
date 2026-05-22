@@ -152,7 +152,7 @@ Build APK(s)
 APK generada:
 
 ```
-android/app/build/outputs/apk/debug/
+https://epnecuador-my.sharepoint.com/:f:/g/personal/edison_escobar01_epn_edu_ec/IgCnpVHRclCGSJEXKR5Av8zmAWtmSwqrW9foyIDsMyDSnAY?e=Qrhxti
 ```
 
 ---
